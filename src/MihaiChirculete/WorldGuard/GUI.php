@@ -74,11 +74,11 @@ class GUI
 
         $issuer->sendForm(new CustomForm("§9§l" . $lang["gui_creation_menu_title"],
             [
-                new Label($lang["gui_creation_menu_label1"]),
+                //new Label($lang["gui_creation_menu_label1"]),
                 new Input($lang["gui_creation_menu_rg_name_box"], "MyRegion"),
-                new Label($lang["gui_creation_menu_label2"]),
+                //new Label($lang["gui_creation_menu_label2"]),
                 new Toggle($lang["gui_creation_menu_toggle_expand"], false),
-                new Label($lang["gui_creation_menu_label3"])
+                //new Label($lang["gui_creation_menu_label3"])
             ],
             function (Player $player, CustomFormResponse $response): void {
                 list($rgName, $extended) = $response->getValues();
@@ -176,7 +176,7 @@ class GUI
                     $lang["gui_effect_weakness"], $lang["gui_effect_poison"], $lang["gui_effect_wither"], $lang["gui_effect_healthboost"],
                     $lang["gui_effect_absorption"], $lang["gui_effect_saturation"], $lang["gui_effect_leviatation"], $lang["gui_effect_fatal_poison"],
                     $lang["gui_effect_conduit_power"]]),
-                new Label($lang["gui_effect_restart_label"]),
+                //new Label($lang["gui_effect_restart_label"]),
                 // add flag for blocked commands
                 // add flag for allowed commands
                 new Toggle($lang["gui_flag_usage"], filter_var($rg->getFlag("use"), FILTER_VALIDATE_BOOLEAN)),
@@ -376,8 +376,8 @@ class GUI
 
         $issuer->sendForm(new CustomForm("§9§l" . $lang["gui_btn_help"],
             [
-                new Label($lang["gui_help_menu_label1"]),
-                new Label($lang["gui_help_menu_label2"]),
+                //new Label($lang["gui_help_menu_label1"]),
+                //new Label($lang["gui_help_menu_label2"]),
             ],
             function (Player $player, CustomFormResponse $response): void {
             }
